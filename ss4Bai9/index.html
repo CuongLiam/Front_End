@@ -23,6 +23,9 @@
         >
         in our gallery
       </p>
+      <p>
+        <a href="#footer">scroll down</a>
+      </p>
       <img
         src="https://images.unsplash.com/photo-1503777119540-ce54b422baff?q=80&w=1372&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         width="200"
@@ -62,7 +65,7 @@
         <li style="list-style-type: none">cats <b>hate</b> other cats</li>
       </ol>
       <h2>Cat Breed</h2>
-      <table style="text-align: center;" border="2">
+      <table style="text-align: center" border="2">
         <tr>
           <th>Breed</th>
           <th>Location of origin</th>
@@ -111,6 +114,51 @@
         </tr>
       </table>
       <h2>Cat Form</h2>
+      <form action="#">
+        <fieldset>
+          <legend>Is your cat an indoor or outdoor cat?</legend>
+          <input
+            type="radio"
+            id="indoor"
+            name="cat-type"
+            value="indoor"
+            checked
+          />
+          <label for="indoor">Indoor</label>
+
+          <input type="radio" id="outdoor" name="cat-type" value="outdoor" />
+          <label for="outdoor">Outdoor</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>What's your cat's personality?</legend>
+          <input
+            type="checkbox"
+            id="loving"
+            name="personality"
+            value="loving"
+            checked
+          />
+          <label for="loving">Loving</label>
+
+          <input type="checkbox" id="lazy" name="personality" value="lazy" />
+          <label for="lazy">Lazy</label>
+
+          <input
+            type="checkbox"
+            id="energetic"
+            name="personality"
+            value="energetic"
+          />
+          <label for="energetic">Energetic</label>
+        </fieldset>
+
+        <input type="text" name="" placeholder="cat photo URL" />
+        <input type="submit" value="Submit" />
+      </form>
     </main>
   </body>
+  <footer id="footer">
+    <p>No Copyright - <a href="https://portal.rikkei.edu.vn/home">rikkei.edu.vn</a></p>
+  </footer>
 </html>
