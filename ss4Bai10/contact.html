@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ss4_Bai10</title>
+    <title>Contact_ss4_Bai10</title>
   </head>
   <body>
     <header>
@@ -18,21 +18,20 @@
       <ul>
         <li><a href="./about.html">About</a></li>
         <li><a href="./projects.html">Projects</a></li>
-        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </header>
     <main>
-      <h2>Featured Video</h2>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/C23rvx9GWYg?si=5zYmii6G6vgBvVW0"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      ></iframe>
+      <h2>Contact Me</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required /><br /><br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /><br /><br />
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message"></textarea><br /><br />
+        <input type="submit" value="Send" />
+      </form>
     </main>
   </body>
   <footer style="padding: 20px">
