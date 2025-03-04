@@ -1,0 +1,51 @@
+body {
+  background-color: rgb(212, 189, 189);
+}
+form {
+  font-family: monospace;
+  padding: 10px;
+  margin: auto;
+  background-color: white;
+  /* display: inline-block;  allows the form to shrink or grow around its content */
+  /* Remove any fixed width/height or set them to auto */
+  width: 300px;
+  height: auto;
+  border-radius: 5px;
+}
+form h3 {
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+label {
+  font-size: large;
+}
+form div {
+  line-height: 25px;
+}
+.inp {
+  width: 98%;
+}
+/* input[type=submit]{
+    color: white;
+    background-color: #007bff;
+    text-align: center;
+    display: block;
+    border: none;
+    width: 100%;
+    padding :7px;
+    border-radius: 3px;
+} */
+input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  display: block;
+  margin: 10px auto; /* Centers horizontally */
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
