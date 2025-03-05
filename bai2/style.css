@@ -1,0 +1,25 @@
+.container {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px 40px;
+    text-align: center;
+    width: fit-content;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    margin: 0px 10px;
+}
+
+.red {
+    font-size: 26px;
+    font-weight: bold;
+    color: #b03030;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.text {
+    font-size: 18px;
+    color: #251c59;
+    margin-top: 10px;
+    line-height: 1.6;
+}
