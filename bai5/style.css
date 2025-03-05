@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    margin: 0;
+}
+
+.card {
+    width: 320px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* overflow: hidden; */
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.header {
+    background: #d32f2f;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px;
+    position: relative;
+}
+
+.hot-icon {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 50px;
+}
+
+.content {
+    padding: 15px;
+}
+
+.content p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+.highlight {
+    color: #f57c00;
+    font-weight: bold;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 10px 0;
+}
+
+.sub-text {
+    font-size: 14px;
+    color: #777;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.register-btn {
+    background: linear-gradient(to right, #d32f2f, #e64a19);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.register-btn i {
+    margin-right: 5px;
+}
+
+.details-btn {
+    background: none;
+    color: #d32f2f;
+    border: 1px solid #d32f2f;
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 60%;
+}
+
+.details-btn i {
+    margin-right: 5px;
+}
