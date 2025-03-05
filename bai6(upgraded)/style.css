@@ -26,7 +26,6 @@ body {
     display: none;
 }
 
-/* Header Style */
 .accordion-header {
     background: white;
     padding: 15px;
@@ -38,8 +37,6 @@ body {
     cursor: pointer;
     transition: background 0.3s ease;
 }
-
-/* Expanded (Active) Header */
 .accordion-item input:checked + .accordion-header {
     background: #e7f1ff;
 }
