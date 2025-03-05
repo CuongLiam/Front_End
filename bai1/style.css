@@ -1,0 +1,51 @@
+* {
+  margin-left: 10px;
+}
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+  margin: 0 450px;
+  width: 500px;
+  height: 260px;
+  background-color: bisque;
+  position: absolute;
+  top: 0;
+  border-radius: 5px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  margin: 5px 0;
+  padding-left: 30px;
+  position: relative;
+}
+ul li::before {
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: rgb(255, 0, 0);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.one{
+    display: inline-block;
+    color: white;
+    object-fit: contain;
+    background-color: rgb(189, 40, 40);
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 17px;
+}
+.two{
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    object-fit: contain;
+    padding: 15px 20px;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
