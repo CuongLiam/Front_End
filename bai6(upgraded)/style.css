@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.accordion {
+    width: 600px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.accordion-item input {
+    display: none;
+}
+
+/* Header Style */
+.accordion-header {
+    background: white;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Expanded (Active) Header */
+.accordion-item input:checked + .accordion-header {
+    background: #e7f1ff;
+}
+
+/* Icons Rotate */
+.accordion-item input:checked + .accordion-header i {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
+
+/* Accordion Body */
+.accordion-body {
+    padding: 15px;
+    font-size: 14px;
+    color: #444;
+    background-color: white;
+    border-top: 1px solid #ddd;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+/* Show Body when Checked */
+.accordion-item input:checked + .accordion-header + .accordion-body {
+    max-height: 500px;
+    padding: 15px;
+}
+
+/* Highlighted Text */
+.accordion-body .highlight {
+    color: #d63384;
+    font-weight: bold;
+    font-family: monospace;
+}

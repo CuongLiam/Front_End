@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordion UI</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/920722fd1c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="accordion">
+      <!-- Accordion Item 1 -->
+      <div class="accordion-item">
+        <input type="checkbox" id="accordion-1" />
+        <label class="accordion-header" for="accordion-1">
+          Accordion Item #1
+          <i class="fa-solid fa-chevron-down"></i>
+        </label>
+        <div class="accordion-body">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic
+          doloribus unde enim vel maiores est reprehenderit harum dicta sit
+          magni magnam sequi, explicabo expedita tempora! Dignissimos aspernatur
+          iusto tenetur nesciunt.
+        </div>
+      </div>
+
+      <!-- Accordion Item 2 (Default Open) -->
+      <div class="accordion-item">
+        <input type="checkbox" id="accordion-2" checked />
+        <label class="accordion-header" for="accordion-2">
+          Accordion Item #2
+          <i class="fa-solid fa-chevron-up"></i>
+        </label>
+        <div class="accordion-body">
+          <strong>This is the second item's accordion body.</strong> It is
+          hidden by default, until the collapse plugin adds the appropriate
+          classes that we use to style each element. These classes control the
+          overall appearance, as well as the showing and hiding via CSS
+          transitions. You can modify any of this with custom CSS or overriding
+          our default variables. It's also worth noting that just about any HTML
+          can go within the <span class="highlight">.accordion-body</span>,
+          though the transition does limit overflow.
+        </div>
+      </div>
+
+      <!-- Accordion Item 3 -->
+      <div class="accordion-item">
+        <input type="checkbox" id="accordion-3" />
+        <label class="accordion-header" for="accordion-3">
+          Accordion Item #3
+          <i class="fa-solid fa-chevron-down"></i>
+        </label>
+        <div class="accordion-body">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero sit
+          maiores enim beatae est a eligendi accusamus voluptate aliquam ab.
+          Minima perferendis dolorum, repellat provident consectetur repellendus
+          ipsa sequi ipsam?.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
