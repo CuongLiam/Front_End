@@ -1,0 +1,57 @@
+* {
+  margin: 10px;
+  /* padding: 0; */
+}
+h1 {
+  padding: 20px;
+  margin-left: 10px;
+  width: 250px;
+  border-bottom: solid red;
+}
+h1,
+h2 {
+  color: #3d4449;
+  font-weight: bold;
+  opacity: 0.8;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.arti {
+  width: 300px;
+  padding: 10px;
+  height: auto;
+  /* border: 1px solid #dee2e4; */
+}
+img {
+  border: 2px solid;
+  width: 200px;
+  border-radius: 5px;
+}
+p {
+  color: #3d4449;
+  word-spacing: 2px;
+  opacity: 0.7;
+}
+button {
+  opacity: 0.8;
+  padding: 10px 30px;
+  background-color: white;
+  border: 2px solid red;
+  border-radius: 5px;
+  color: red;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+    cursor: pointer;
+}
+/* td {
+  padding: 20px;
+}
+
+first child
+td:first-child {
+  border-right: 2px solid #dee2e4;
+} */
+td.divider {
+    width: 2px;
+    background-color: #dee2e4;
+  }
