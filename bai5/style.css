@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.parent{
+    margin: 100px auto;
+    display: flex;
+    background-color: antiquewhite;
+    /* width: 600px; */
+
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+
+}
+
+.parent .child{
+    margin: 10px;
+    background-color: #800080;
+    height: 100px;
+    width: 15%;
+
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}
+

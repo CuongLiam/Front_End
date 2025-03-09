@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent{
+    margin: 50px 20px;
+    display: flex;
+    background-color: antiquewhite;
+    border: 5px solid black;
+    /* padding: 20px; */
+    /* gap: 20px; */
+    
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.parent .child{
+    background-color: aqua;
+    height: 100px;
+    width: 23%;
+    margin: 10px;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

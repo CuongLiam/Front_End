@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent{
+    display: flex;
+    background-color: #f0f0f0;
+    width: 600px;
+    height: 600px;
+    margin: 50px auto;
+    border: 5px solid black;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.parent .child{
+    display: flex;
+    color: red;
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+}
