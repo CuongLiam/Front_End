@@ -6,16 +6,17 @@
 header{
     display: flex;
     background-color: #e5e5e5;
+    height: auto;
 }
 
 h1{
-    margin: 50px;
+    margin: 30px;
     font-family: "Waiting for the Sunrise", cursive;
     font-weight: 700;
 }
 nav{
     display: flex;
-    margin: 50px;
+    margin: 30px;
 }
 ul{
     display: flex;
@@ -33,11 +34,14 @@ ul li:nth-of-type(1){
     color: black;
 }
 .search{
+    border-radius: 5px;
     cursor: pointer;
-    width: 100px;
+    width: 200px;
+    height: auto;
     background-color: #8d939e;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px;
+    margin: 30px 0;
+    padding: 10px 20px;
 }
