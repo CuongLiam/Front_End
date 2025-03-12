@@ -62,3 +62,10 @@ img{
   object-fit: cover;
   overflow: hidden;
 }
+.image1{
+  position: relative;
+  bottom: 100px;
+  height: 200px;
+  overflow: hidden;
+  object-fit: cover;
+}
