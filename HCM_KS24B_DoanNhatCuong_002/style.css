@@ -222,3 +222,23 @@ header .title {
   padding-bottom: 96px;
   padding-left: 80px;
 }
+
+footer {
+  width: 1440;
+  height: 68;
+  padding-top: 24px;
+  padding-right: 80px;
+  padding-bottom: 24px;
+  padding-left: 80px;
+}
+footer .container {
+  display: flex;
+  width: 1280;
+  height: 20;
+  padding-right: 32px;
+  padding-left: 32px;
+  gap: 64px;
+
+  align-items: center;
+  justify-content: center;
+}
