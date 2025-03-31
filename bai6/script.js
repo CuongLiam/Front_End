@@ -12,7 +12,7 @@ function isDx(str) {
 
 let inputString = prompt("Nhập vào một chuỗi ký tự để kiểm tra:");
 
-if (isDs(inputString)) {
+if (isDx(inputString)) {
     console.log(`${inputString} là chuỗi đối xứng`);
     alert(`${inputString} là chuỗi đối xứng`);
 } else {
