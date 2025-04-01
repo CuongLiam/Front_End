@@ -1,15 +1,16 @@
 let arr = [];
+let arr2 = [];
 
 while (true) {
   let choice = Number(
     prompt(`=============== MENU ===============
-1. Nhập số phần tử cần nhập và giá trị các phần tử 
-2. In ra giá trị các phần tử đang quản lý
-3. In ra giá trị các phần tử chẵn và tính tổng
-4. In ra giá trị lớn nhất và nhỏ nhất trong mảng
-5. 
-6. 
-7. 
+1. Them phan tu
+2. Hien thi phan tu
+3. In chan, tong chan
+4. Max, min
+5. PrimeNum and sum
+6. Thong ke co bao nhieu 
+7. Thêm một phần từ vào vị trí chỉ định
 8. Thoát chương trình
 ===================================
 Nhập lựa chọn:`)
@@ -34,7 +35,7 @@ Nhập lựa chọn:`)
       break;
     }
     case 2: {
-      alert("array: ", arr);
+      alert(`array: ${arr}`);
       break;
     }
     case 3: {
@@ -50,49 +51,85 @@ Nhập lựa chọn:`)
                 tong so chan la ${evenSum}`);
       break;
     }
-    case 4:{
-        let maxNum = arr[i], minNum =arr[i];
+    case 4: {
+      let maxNum = arr[i],
+        minNum = arr[i];
 
-        for(let i = 0; i < arr.length; i++){
-            if(arr[i] > maxNum){
-                arr[i] = maxNum;
-            }
-            if(arr[i] < minNum){
-                arr[i] = minNum;
-            }
+      for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > maxNum) {
+          arr[i] = maxNum;
         }
-        alert(`so lon nhat la ${maxNum}, so nho nhat la ${minNum}`);
+        if (arr[i] < minNum) {
+          arr[i] = minNum;
+        }
+      }
+      alert(`so lon nhat la ${maxNum}, so nho nhat la ${minNum}`);
       break;
     }
-    case 5:{
-        let count = 0;
-        let check = 2;
+    case 5: {
+      let sum = 0;
+      let arrPrime = [];
 
-        let arrPrime = [];
+      for (let i = 0; i < arr.length; i++) {
+        if (arr[i] < 2) continue;
 
-        while(check < arr.length){
-            let flag = true;
-            for(let i = 2; i*i <= check; i++){
-                if(check % arr[i] == 0){
-                    flag = false;
-                    break;
-                }
-            }
-
-            if(flag){
-                
-                count++;
-            }
+        let isPrime = true;
+        for (let j = 2; j * j <= arr[i]; j++) {
+          if (arr[i] % j === 0) {
+            isPrime = false;
+            break;
+          }
         }
 
+        if (isPrime) {
+          arrPrime.push(arr[i]);
+          sum += arr[i];
+        }
+      }
+
+      alert(`day cac so la so nguyen to : ${arrPrime}\ntong la: ${sum}`);
     }
 
-    case 6:
-      break;
+    case 6: {
+      let findNum = Number(prompt(`Nhap 1 so muon thong ke`));
+      let count = 0;
+      for (value of arr) if (value === findNum) count++;
 
-    case 7:
+      alert(`phan tu ${findNum} xuat hien ${count} lan`);
       break;
-
+    }
+    case 7: {
+      let addPosition = Number(
+        prompt(`nhap vi tri ban muon them: (1-${arr.length})`)
+      );
+      let addValue = Number(prompt(`nhap gia tri ban muon them: `));
+      if (
+        isNaN(addPosition) ||
+        isNaN(addValue) ||
+        addPosition < 1 ||
+        addPosition > arr.length + 1
+      ) {
+        alert("Vi tri hoac gia tri khong hop le!");
+        break;
+      }
+      
+      
+      // addPosition -= 1;
+      // arr.splice(addPosition, 0, addValue);
+      
+      let newArr = [];
+      for (let i = 0; i <= arr.length; i++) {
+        if (i === addPosition - 1) {
+          newArr.push(addValue);
+        }
+        if (i < arr.length) {
+          newArr.push(arr[i]);
+        }
+      }
+      arr = newArr;
+      alert(`Mảng sau khi thêm: ${arr}`);
+      break;
+    }
     case 8:
       alert("Chương trình kết thúc.");
       break;
