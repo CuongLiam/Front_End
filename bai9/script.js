@@ -15,6 +15,7 @@ function sumEvenOdd(arr) {
                         //const numbers = [1, 2, 3, 4, 5];
                         // const total = numbers.reduce((sum, num) => sum + num, 0);
                         // console.log(total); // Output: 15
+// let totalEven = arr.reduce((sum, num) => num % 2 === 0 ? sum + num : sum, 0);
 
 
     let totalOdd = arr.filter(num => num % 2 !== 0)
