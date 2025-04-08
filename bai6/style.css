@@ -1,0 +1,19 @@
+form {
+    border: 2px solid black;
+    padding: 20px;
+    width: 300px;
+    margin: 50px auto;
+    font-size: 20px;
+  }
+
+  input {
+    width: 95%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  button {
+    font-size: 20px;
+    padding: 10px 20px;
+  }
