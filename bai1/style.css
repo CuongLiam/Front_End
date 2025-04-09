@@ -1,0 +1,14 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* padding: 30px; */
+    height: 200px;
+    width: 400px;
+    border: 1px solid black;
+}
+#btn{
+    height: 50px;
+    width: 100px;
+}

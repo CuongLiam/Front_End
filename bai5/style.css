@@ -1,0 +1,15 @@
+.container {
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(34, 31, 31, 0.733);
+  }
+  .btn-delete {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+  }
