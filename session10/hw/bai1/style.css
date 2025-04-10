@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    background-color: #e5e5e5;
+    height: auto;
+}
+
+h1{
+    margin: 30px;
+    font-family: "Waiting for the Sunrise", cursive;
+    font-weight: 700;
+}
+nav{
+    display: flex;
+    margin: 30px;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+ul li{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    /* width: 140px; */
+    color: #a4a4a4;
+}
+ul li:nth-of-type(1){
+    font-weight: 700;
+    color: black;
+}
+.search{
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    height: auto;
+    background-color: #8d939e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    padding: 10px 20px;
+}

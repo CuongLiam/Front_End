@@ -1,0 +1,49 @@
+h1 {
+  color: blue;
+}
+h2 {
+  color: red;
+  background-color: yellow;
+}
+button {
+  color: white;
+  background-color: rgb(0, 255, 242);
+}
+/* p{
+    color: rgba(29, 32, 26, 0.8);
+    text-align: center;
+    text-decoration: underline wavy red;
+    font-family: 'Courier New', Courier, monospace;
+} */
+.arti {
+  color: purple;
+}
+.arti::first-line {
+  color: red;
+  font-size: 30px;
+}
+.anchor {
+    text-decoration: wavy underline;
+    color: orange;
+}
+.anchor:hover {
+    color: red;
+}
+.anchor:active {
+    color: green;
+}
+/* .anchor:visited {
+    color: blue;
+} */
+#para {
+  color: green;
+}
+/* *{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+} */
+/* *:hover {
+  background-color: lightgray;
+} */

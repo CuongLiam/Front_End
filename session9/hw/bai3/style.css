@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent{
+    margin: 50px 20px;
+    display: flex;
+    background-color: antiquewhite;
+    border: 5px solid black;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+.parent .child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #3498db;
+    height: 100px;
+    margin: 10px;
+    width: 23%;
+    border-radius: 5px;
+}
+.parent .child:nth-of-type(5){
+    width: 47.5%;
+}

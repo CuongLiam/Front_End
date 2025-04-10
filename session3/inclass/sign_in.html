@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in</title>
+  </head>
+  <body>
+    <h1>Sign in</h1>
+
+    <form action="http://www.myserver.com" method="POST">
+      <label for="name">Username</label>
+      <input
+        id="name"
+        type="text"
+        name="username"
+        placeholder="exp:Nguyen Van A"
+      />
+      <br />
+      <label for="pass">Password</label>
+      <input id="pass" type="password" name="password" />
+      <br />
+      <label for="email">Email</label>
+      <input
+        id="email"
+        type="email"
+        name="email"
+        placeholder="exp: nguyenA@gmail.com"
+      />
+      <br />
+      <label>Gender:</label>
+      <br />
+      <label>Male</label>
+      <input type="radio" name="gender" value="make" />
+      <label>Female</label>
+      <input type="radio" name="gender" value="female" />
+      <label>Other</label>
+      <input type="radio" name="gender" value="other" />
+      <button type="submit">send</button>
+      <!-- <input type="sumbit" value="send" name="action"/> -->
+      <br />
+      <select name="city" id="" multiple>
+        <option value="hn">Ha noi</option>
+        <option value="hcm">Ho chi minh</option>
+      </select>
+      <br />
+      <!-- <textarea name="" id="" cols="20" rows="20"></textarea> -->
+      <input type="reset" name="" id="" value="reset">
+      <input type="range" name="" id="">
+      <input type="color" name="" id="">
+      <input type="datetime-local" name="" id="">
+    </form>
+  </body>
+</html>

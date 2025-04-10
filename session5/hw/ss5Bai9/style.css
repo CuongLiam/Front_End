@@ -1,0 +1,110 @@
+/* Basic page setup */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f5f5f5;
+}
+h2,
+h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Container for the form */
+.form-container {
+  background-color: #fff;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto; /* centers the container */
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Spacing for form groups */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Labels on their own line */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Basic input fields and selects */
+input[type="text"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+/* Two columns for first/last name, etc. */
+.form-row {
+  display: flex;
+  gap: 10px; /* space between columns */
+}
+.form-row .form-group {
+  flex: 1; /* each group takes up equal space */
+}
+
+/* Checkboxes inline with their labels */
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* space between checkbox and text */
+  margin-bottom: 10px;
+}
+
+/* Payment radio buttons inline */
+.payment-options {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.payment-options input[type="radio"] {
+  margin-right: 5px;
+}
+
+/* Submit button */
+button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Username "@" wrapper */
+.input-group {
+  display: flex;
+  align-items: center;
+}
+.input-group span {
+  padding: 8px 10px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-right: none; /* so it merges with the input's border */
+  border-radius: 3px 0 0 3px;
+  color: #555;
+  font-size: 14px;
+}
+.input-group input {
+  border: 1px solid #ccc;
+  border-left: none; /* merges with the span's border */
+  border-radius: 0 3px 3px 0;
+  padding: 8px;
+  flex: 1;
+  font-size: 14px;
+}

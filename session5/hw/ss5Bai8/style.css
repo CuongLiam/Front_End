@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  background-color: #fff;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #24175b; /* Dark purple */
+  margin-bottom: 10px;
+}
+
+.separator {
+  border-top: 2px dashed #ccc;
+  margin-bottom: 15px;
+}
+
+/* Grid layout */
+.articles-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns */
+  gap: 15px;
+}
+
+/* Each row */
+.article-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+/* Thumbnail image */
+.article-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Text content */
+.article-text {
+  flex: 1;
+}
+
+/* Date & reading time */
+.article-meta {
+  font-size: 12px;
+  color: #777;
+  margin-bottom: 3px;
+}
+
+/* Title */
+.article-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #24175b;
+  text-decoration: none;
+}
+
+.article-title:hover {
+  text-decoration: underline;
+}

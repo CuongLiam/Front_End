@@ -1,0 +1,33 @@
+/* *{
+    padding: 0;
+    margin: 0;
+} */
+caption {
+    font-family: "Roboto Mono", monospace;
+    color: black;
+    text-shadow: 1px 1px 4px #fff, 1px 1px 10px #ccc;
+    font-size: 48px;
+  }
+  table {
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    border-collapse: collapse;
+    text-align: center;
+    /* margin-left: 10px; */
+  }
+  thead {
+    background-color: #353333;
+    color: white;
+  }
+  .hi {
+    background-color: rgba(207, 178, 178, 0.781);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  th, td {
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10px; /* Add spacing */
+}
