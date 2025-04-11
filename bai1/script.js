@@ -25,9 +25,10 @@ Nhập lựa chọn:`);
             break;
         default:
             console.log("Vui lòng chọn từ 1 đến 5.");
+            break;
     }
 
-    if (choice === "5") break;
+    if (choice === "5" || choice === null) break;
 }
 
 let products = [
