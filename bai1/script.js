@@ -1,3 +1,12 @@
+let products = [
+    { id: 1, name: "mèn mén", price: 20000, quantity: 20, category: "A" },
+    { id: 2, name: "mứt", price: 80000, quantity: 21, category: "A" },
+    { id: 3, name: "cơm lam", price: 40000, quantity: 15, category: "C" },
+    { id: 4, name: "bánh đậu xanh", price: 60000, quantity: 30, category: "D" }
+];
+
+let cart = [];
+
 while (true) {
     let choice = prompt(`========== MENU ==========
 1. Hiển thị sản phẩm theo danh mục
@@ -31,17 +40,8 @@ Nhập lựa chọn:`);
     if (choice === "5" || choice === null) break;
 }
 
-let products = [
-    { id: 1, name: "mèn mén", price: 20000, quantity: 20, category: "món ăn dân tộc Mông" },
-    { id: 2, name: "mứt", price: 80000, quantity: 21, category: "món ăn dân tộc Kinh" },
-    { id: 3, name: "cơm lam", price: 40000, quantity: 15, category: "món ăn dân tộc Mông" },
-    { id: 4, name: "bánh đậu xanh", price: 60000, quantity: 30, category: "món ăn dân tộc Kinh" }
-];
-
-let cart = [];
-
 function showProductsByCategory() {
-    let category = prompt("Nhập tên danh mục (vd: món ăn dân tộc Mông):");
+    let category = prompt("Nhập tên danh mục (vd: A, B, C, ...):");
     let filtered = products.filter(p => p.category.toLowerCase() === category.toLowerCase());
     if (filtered.length === 0) {
         console.log("Không tìm thấy sản phẩm trong danh mục");
