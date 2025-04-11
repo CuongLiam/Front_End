@@ -12,7 +12,7 @@
     border: 1px solid black;
     color: black;
     font-weight: bold;
-    font-family: sans-serif;
+    font-family: arial;
     padding: 5px;
   }
 
@@ -25,5 +25,5 @@
   }
 
   .purple {
-    background-color: violet;
+    background-color: purple;
   }

@@ -7,7 +7,7 @@ boxes.forEach(box => {
     } else if (box.classList.contains("red")) {
       document.body.style.backgroundColor = "red";
     } else if (box.classList.contains("purple")) {
-      document.body.style.backgroundColor = "violet";
+      document.body.style.backgroundColor = "purple";
     }
   });
 });
