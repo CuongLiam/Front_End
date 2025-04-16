@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      .todo-container {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+      .todo-input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .todo-button {
+        width: 100%;
+        padding: 10px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .todo-button:hover {
+        background-color: #218838;
+      }
+      .todo-list {
+        list-style: none;
+        padding: 0;
+      }
+      .todo-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 5px;
+      }
+      .delete-button {
+        background-color: #dc3545;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 5px 10px;
+      }
+      .delete-button:hover {
+        background-color: #c82333;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="todo-container">
+      <h1>To-Do List</h1>
+      <input
+        type="text"
+        id="todo-input"
+        class="todo-input"
+        placeholder="Add a new task"
+      />
+      <button id="add-todo" class="todo-button">Add Task</button>
+      <ul id="todo-list" class="todo-list"></ul>
+    </div>
+
+    <script>
+      const todoInput = document.getElementById("todo-input");
+      const addTodoButton = document.getElementById("add-todo");
+      const todoList = document.getElementById("todo-list");
+
+      const loadTodos = () => {
+        const todos = JSON.parse(localStorage.getItem("todos")) || [];
+        todos.forEach((todo) => addTodoToDOM(todo));
+      };
+
+      const saveTodos = () => {
+        const todos = Array.from(todoList.children).map(
+          (item) => item.querySelector(".todo-text").textContent
+        );
+        localStorage.setItem("todos", JSON.stringify(todos));
+      };
+
+      const addTodoToDOM = (todoText) => {
+        const li = document.createElement("li");
+        li.className = "todo-item";
+
+        const span = document.createElement("span");
+        span.className = "todo-text";
+        span.textContent = todoText;
+
+        const deleteButton = document.createElement("button");
+        deleteButton.className = "delete-button";
+        deleteButton.textContent = "Delete";
+        deleteButton.onclick = () => {
+          li.remove();
+          saveTodos();
+        };
+
+        li.appendChild(span);
+        li.appendChild(deleteButton);
+        todoList.appendChild(li);
+      };
+
+      addTodoButton.addEventListener("click", () => {
+        const todoText = todoInput.value.trim();
+        if (todoText) {
+          addTodoToDOM(todoText);
+          saveTodos();
+          todoInput.value = "";
+        }
+      });
+
+      loadTodos();
+    </script>
+  </body>
+</html>
