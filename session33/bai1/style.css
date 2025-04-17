@@ -1,0 +1,21 @@
+.input-container {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.input-container input[type="password"], input[type="text"]{
+    width: 30%;
+    padding: 10px;
+
+}
+.input-container .btn{
+    position: absolute;
+    right: 68%;
+}
+.input-container .btn i {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+}
